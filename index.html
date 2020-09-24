@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="flipclock.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="flipclock.min.js"></script>
+  </head>
+  <body>
+    <h1>Convert Fanatics A/B Test</h1>
+    <!-- Ouibounce Modal -->
+    <div id="ouibounce-modal">
+      <div class="underlay"></div>
+      <div class="">
+        <div class="modal py-8 px-6 px-4 w-full md:w-5/6 lg:w-3/4 xl:w-1/2">
+          <div class="modal-body text-center">
+            <h3 class="mb-4 text-lg md:text-xl text-black">
+              WAIT! SPECIAL OFFER FOR
+              <span id="city" style="color: red"></span> RESIDENTS...
+            </h3>
+            <h2 class="text-2xl lg:text-3xl xl:text-5xl text-black">
+              Claim your instant discount before the timer runs out!
+            </h2>
+            <div
+              class="image w-16 lg:w-32 mt-4 lg:mt-0 invisible sm:visible absolute"
+            >
+              <img
+                src="img/kisspng-arrow-computer-icons-clip-art-red-arrow-line-png-5ab19d05e5d413.6462635715215895099414.png"
+                alt=""
+              />
+            </div>
+            <div class="clock mt-4"></div>
+            <div class="message"></div>
+            <button
+              class="bg-red-700 hover:bg-red-600 text-lg sm:text-2xl lg:text-4xl text-white font-bold mt-8 py-6 px-8 border border-red-700 rounded-lg"
+            >
+              Claim Discount
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.12/ouibounce.js"
+      integrity="sha512-jBbXdclmLsEjHr6brYhQEf22JqtYDPyUV4gl8AJ9u5HL1burqhMFD4x1gt3HF4alYm6uq5ujYFDTQ78743lyZw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="logic.js"></script>
+  </body>
+</html>
